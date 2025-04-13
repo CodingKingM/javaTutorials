@@ -7,7 +7,7 @@ public class Main {
         Scanner input = new Scanner(System.in); // input is the object name and it can be anything
         System.out.println("Welcome to the Rectangle Area calculator!");
 
-        System.out.println("Enter a width: ");
+        System.out.print("Enter a width: ");
         double width = input.nextDouble();  // nextDouble() is a method from the Scanner class
 
         System.out.print("Enter a length: ");
