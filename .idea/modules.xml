@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JAVA_TUTORIAL_EL/03_firstProgram/03_firstProgram.iml" filepath="$PROJECT_DIR$/JAVA_TUTORIAL_EL/03_firstProgram/03_firstProgram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA_TUTORIAL_EL/05_InputandVariablesP1/05_InputandVariablesP1.iml" filepath="$PROJECT_DIR$/JAVA_TUTORIAL_EL/05_InputandVariablesP1/05_InputandVariablesP1.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_EL/06FirstClassPart3YT/06FirstClassPart3YT.iml" filepath="$PROJECT_DIR$/OOP_EL/06FirstClassPart3YT/06FirstClassPart3YT.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_EL/07FirstClassPart4/07FirstClassPart4.iml" filepath="$PROJECT_DIR$/OOP_EL/07FirstClassPart4/07FirstClassPart4.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_EL/08ConstructorsAndConstructorOverloading/08ConstructorsAndConstructorOverloading.iml" filepath="$PROJECT_DIR$/OOP_EL/08ConstructorsAndConstructorOverloading/08ConstructorsAndConstructorOverloading.iml" />
