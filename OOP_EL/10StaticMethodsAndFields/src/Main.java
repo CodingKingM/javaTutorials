@@ -9,6 +9,10 @@ public class Main {
 
     System.out.println(Car.getNo_of_objects());
 
+    System.out.println(Calc.add(10, 5));
+    System.out.println(Calc.sub(10, 5));
+    System.out.println(Calc.mul(10, 5));
+
 
 
 
