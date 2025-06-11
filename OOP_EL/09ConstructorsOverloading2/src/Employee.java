@@ -17,15 +17,15 @@ public class Employee {
     }
 
     public Employee(int id, String name){
-        emp_Id = id;
-        emp_Name = name;
+        this.emp_Id = id;
+        this.emp_Name = name;
     }
 
     public Employee(int id, String name, boolean resi){ //constructor overloading by changing the signature from previous one
         // emp_Id = id;
         // emp_Name = name;
         this (id, name);
-        resident = resi;
+        this.resident = resi;
     }
 
     public Employee(int id, String name, String dept, double sal, double bon, boolean res){
