@@ -5,8 +5,8 @@ public class Rectangle {
     private double length;     // private is used as data hiding
     private double width;      // is an instance variable
 
-    public void setLength(double len) {
-        length = len;
+    public void setLength(double l) {
+        length = l;
     }
     public void setWidth(double w) {
         width = w;
@@ -26,4 +26,5 @@ public class Rectangle {
 
 
 }
+
 

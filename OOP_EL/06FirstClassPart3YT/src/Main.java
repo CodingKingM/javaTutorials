@@ -1,4 +1,3 @@
-
 public class Main {
 
 
@@ -8,11 +7,17 @@ public class Main {
 
         r1.setLength(5);
         r1.setWidth(10.5);
+        System.out.println("the length of r1 is " + r1.getLength());
+        System.out.println(r1.getWidth());
+        System.out.println(r1.getArea());
 
 
         Rectangle r2 = new Rectangle();
         r2.setLength(15);
         r2.setWidth(20);
+        System.out.println(r2.getLength());
+        System.out.println(r2.getWidth());
+        System.out.println(r2.getArea());
 
 
 
