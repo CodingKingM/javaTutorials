@@ -2,15 +2,22 @@ public class Car {
 
     private String maker;
     private int model;
+    private static int no_of_objects; // instant field (saves data only to the current object )
 
     public Car() { // constructor which are the default values
         maker = "Honda";
         model = 2020;
+        no_of_objects++;
     }
 
     public Car(String m, int mo) { // so the user can input the default values
         maker = m;
         model = mo;
+        no_of_objects++;
+    }
+
+    public static int getNo_of_objects() { // instant method
+        return no_of_objects;
     }
 
     public void setMaker(String m) {
@@ -37,6 +44,8 @@ public class Car {
     public int getModel() {
         return model;
     }
+
+
 
 }
 
