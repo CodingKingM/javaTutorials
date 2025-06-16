@@ -4,6 +4,7 @@ public class Book {
     private int pages;
     private static int sharedId = 1; //SHARED counter by all objects
     private int bookId; // PERSONAL TO each book object, every book has its own id
+    private static int noOfBooks;
 
     //constructors
     public Book(){//default constructor (Constructor 1)
@@ -11,6 +12,7 @@ public class Book {
         author = "No Author";
         pages = 0;
         bookId = sharedId++; // // bookId gets 1, then nextId becomes 2
+        noOfBooks++;
     }
     // Constructor 2
     public Book(String title){// takes the title and sets the default values for author and pages
@@ -18,14 +20,22 @@ public class Book {
         author = "No Author";
         pages = 0;
         bookId = sharedId++;
+        noOfBooks++;
     }
     // Constructor 3
     public Book(String title, String author){
-        this (title); // cosnstructor chaining
+        this (title); // constructor chaining
         this.author = author;
         pages = 0;
-        bookId = sharedId++;
+        //bookId = sharedId++; //if we were to leave it whenever this (title) is called it bookId = sharedId++; from const. 2
+        //noOfBooks++;
 
+    }
+    public static void resetIdCounter() {
+        sharedId = 1;
+    }
+    public static int getNoOfBooks() {
+        return noOfBooks;
     }
 
     //setters

@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
+        Book.resetIdCounter();  // Reset to 1 before creating books
         // Constructor #1 - No parameters (default)
-        Book b1 = new Book();
+        Book b1 = new Book();// Now this will be ID 1
         System.out.println("=== Book b1 (default constructor) ===");
         b1.displayInfo();
 
@@ -21,5 +22,7 @@ public class Main {
         b2.setPages(300);
         System.out.println("\n=== Book b2 after using setters ===");
         b2.displayInfo();
+
+        System.out.println("Total number of books: "+ Book.getNoOfBooks()); // to get the total number of books
     }
 }
