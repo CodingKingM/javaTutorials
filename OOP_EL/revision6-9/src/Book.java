@@ -19,7 +19,7 @@ public class Book {
         this.title = title;
         author = "No Author";
         pages = 0;
-        bookId = sharedId++;
+        bookId = sharedId++; //bookId gets w, then nextId becomes 3
         noOfBooks++;
     }
     // Constructor 3
@@ -33,6 +33,7 @@ public class Book {
     }
     public static void resetIdCounter() {
         sharedId = 1;
+        noOfBooks = 0;
     }
     public static int getNoOfBooks() {
         return noOfBooks;
