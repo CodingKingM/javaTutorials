@@ -15,6 +15,8 @@ public class Book {
     //setters
     public void setTitle(String title) {
         this.title = title;
+        // instead of (String t){
+        // title = t;
     }
     public void setAuthor(String author) {
         this.author = author;
