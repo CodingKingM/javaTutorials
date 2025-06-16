@@ -17,6 +17,8 @@ public class Rectangle {
         this.width = width;
     }
 
+
+
     public void setLength(double len) { //len is a temporary variable
         len = 70;
         length = len;
