@@ -26,7 +26,7 @@ public class Rectangle {
         Rectangle result= new Rectangle(); // to save the results of 2 objects in
         result.length = room1.length + room2.length;
         result.width = room1.width + room2.width;
-    return result;
+        return result;
     }
 
     public void setLength(double len) { //len is a temporary variable
