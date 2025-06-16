@@ -7,7 +7,7 @@ public class Employee {
     private double bonus;
     private boolean resident;
 
-    public Employee() { //default values
+    public Employee() { // (constructor - special method ) default values aka knowns
         emp_Id = 100;
         emp_Name = "No name";
         department = "Has not been assigned yet";
