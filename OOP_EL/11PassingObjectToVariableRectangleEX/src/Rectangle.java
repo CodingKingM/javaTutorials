@@ -24,7 +24,7 @@ public class Rectangle {
     public void setWidth(double width) { // PARAMETER (receives values in methods),
                                         //Belongs to: The method only, Lives: Only while the method is running
                                         //Scope: Only inside that specific method, Purpose: Receives values passed to the method
-        this.width = width; // can also be written like this
+        this.width = width;           // can also be written like this
     }
 
     // we need 3 methods, one to return length, one to return width, one to return the area of the rectangle
