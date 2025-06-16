@@ -16,6 +16,7 @@ public class Rectangle {
     }
 
     public void setLength(double length) {
+        length = 70;
         this.length = length;
     }
     public void setWidth(double width) {
