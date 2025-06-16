@@ -6,12 +6,28 @@ public class Book {
     private int bookId; // PERSONAL TO each book object, every book has its own id
 
     //constructors
-    public Book(){
+    public Book(){//default constructor (Constructor 1)
         title = "No Title";
         author = "No Author";
         pages = 0;
         bookId = sharedId++; // // bookId gets 1, then nextId becomes 2
     }
+    // Constructor 2
+    public Book(String title){// takes the title and sets the default values for author and pages
+        this.title = title;
+        author = "No Author";
+        pages = 0;
+        bookId = sharedId++;
+    }
+    // Constructor 3
+    public Book(String title, String author){
+        this (title); // cosnstructor chaining
+        this.author = author;
+        pages = 0;
+        bookId = sharedId++;
+
+    }
+
     //setters
     public void setTitle(String title) {
         this.title = title;
@@ -42,5 +58,14 @@ public class Book {
         System.out.println("Pages: " + pages);
         System.out.println(" ----- ");
     }
+
+    public void displayInfo(String prefix){
+        System.out.println(prefix + "Book ID: " + bookId);
+        System.out.println(prefix + "Title: " + title);
+        System.out.println(prefix + "Author: " + author);
+        System.out.println(prefix + "Pages: " + pages);
+        System.out.println(" ----- ");
+    }
+
 
 }
