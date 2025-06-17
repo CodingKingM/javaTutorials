@@ -12,9 +12,9 @@ public class BankAccount {
 
     // Constructor
 
-    public BankAccount(){ // has to be class name not variable name
+    public BankAccount(){ // ** HAS TO BE THE CLASS NAME NOT A VAIRABLE NAME
         accountHolder = "Unknown";
-        // accountNumber = 0; shouldn't be set to zero
+        // accountNumber = 0; SHOULD NOT BE SET TO ZERO
         accountNumber = ++nextAccountNumber;
         accountBalance = 0;
         totalAccounts++;
@@ -24,29 +24,29 @@ public class BankAccount {
         this.accountHolder = accountHolder; // we used this to indicate that this is the object we are working with and we can use AccountHolder as a parameter
         accountNumber = 0;
         accountBalance = 0;
-        totalAccounts++; // **the counter was missing
+        totalAccounts++; // ** THE COUNTER WAS MISSING
     }
 
     public BankAccount(String accountHolder, int accountBalance){
         this (accountHolder);
         this.accountBalance = accountBalance;
-        // accountNumber = 0; ** dont see account number = 0, let the other constructor handle it
+        // accountNumber = 0; ** dont set account number = 0, let the other constructor handle it
     }
 
     //Instance Methods
 
     public void deposit(double amount){ // adds to balance
-    accountBalance += amount; // i dont know why we have used this
+    accountBalance += amount; // SAME AS : accountBalance = accountBalance + amount
     }
 
     public void withdraw(double amount){ // subtracts from balance
-        accountBalance -= amount; // i dont know why
+        accountBalance -= amount; // Same as: accountBalance = accountBalance - amount
     }
     // moves money from accounts // **** should be void, not return bankAccount
     public void transferMoney(BankAccount otherAccount, double amount) // this part needs revison
     {
         this.accountBalance -=amount; //remove the money from the current account
-        otherAccount.accountBalance += amount; // add the moeny from account1 to other account
+        otherAccount.accountBalance += amount; // add the money from account1 to other account
     }
     // getters
     public double getBalance(){
@@ -75,11 +75,11 @@ public class BankAccount {
          return otherBankAccount;
      }
 
-     // Static methods
-    public int getTotalAccounts(){
+     // Static methods // *** STATIC SHOULD BE STATIC
+    public static int getTotalAccounts(){
         return totalAccounts;
     }
-    public void resetCounters(){
+    public static void resetCounters(){
         totalAccounts = 0;
         nextAccountNumber = 0;
     }
