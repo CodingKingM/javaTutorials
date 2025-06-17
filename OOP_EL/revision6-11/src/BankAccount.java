@@ -30,7 +30,7 @@ public class BankAccount {
     public BankAccount(String accountHolder, int accountBalance){
         this (accountHolder);
         this.accountBalance = accountBalance;
-        // accountNumber = 0; ** dont set account number = 0, let the other constructor handle it
+        // accountNumber = 0; ** do NOT set account number = 0, let the other constructor handle it
     }
 
     //Instance Methods
@@ -69,10 +69,12 @@ public class BankAccount {
         System.out.println(prefix + "Account Number: " + accountNumber);
         System.out.println(prefix + "Account Balance: " + accountBalance);
     }
+    // passing an object into a method (combining to objects inside of a method)
      public BankAccount combineAccounts(BankAccount otherAccount){
-        BankAccount otherBankAccount = new BankAccount();
-        otherBankAccount.accountHolder = this.accountHolder; // i dont know why
-         return otherBankAccount;
+        BankAccount combined = new BankAccount(); // ** BETTER VARIABLE NAME (LIKE COMBINED/RESULT)
+        combined.accountHolder = this.accountHolder + "&" + otherAccount.accountHolder;
+        combined.accountBalance = this.accountBalance + otherAccount.accountBalance;
+         return combined;
      }
 
      // Static methods // *** STATIC SHOULD BE STATIC
