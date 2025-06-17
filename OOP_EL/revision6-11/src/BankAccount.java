@@ -36,7 +36,13 @@ public class BankAccount {
     public void deposit(double amount){ // adds to balance
     accountBalance += amount; // i dont know why we have used this
     }
-    public void withdraw(double amount){
+
+    public void withdraw(double amount){ // subtracts from balance
         accountBalance -= amount; // i dont know why
+    }
+    // moves money from accounts
+    public BankAccount transferMoney(BankAccount otherAccount, double amount) // this part needs revison
+    {
+
     }
 }
