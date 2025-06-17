@@ -45,4 +45,14 @@ public class BankAccount {
     {
 
     }
+    // getters
+    public double getBalance(){
+        return accountBalance;
+    }
+    public String getAccountHolder(){
+        return accountHolder;
+    }
+    public int getAccountNumber(){
+        return accountNumber;
+    }
 }
