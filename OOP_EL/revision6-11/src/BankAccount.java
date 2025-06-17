@@ -14,17 +14,18 @@ public class BankAccount {
 
     public BankAccount(){ // ** HAS TO BE THE CLASS NAME NOT A VAIRABLE NAME
         accountHolder = "Unknown";
-        // accountNumber = 0; SHOULD NOT BE SET TO ZERO
+        // accountNumber = 0; SHOULD NOT BE SET TO ZERO otherwise it will not have a unique account number and all of them wil lbe zero
         accountNumber = ++nextAccountNumber;
         accountBalance = 0;
         totalAccounts++;
     }
 
     public BankAccount(String accountHolder){
+        this();
         this.accountHolder = accountHolder; // we used this to indicate that this is the object we are working with and we can use AccountHolder as a parameter
-        accountBalance = 0;
-        accountNumber = ++nextAccountNumber; // ** needs ot be written cuz we dont have constructor chaining this ()
-        totalAccounts++; // ** THE COUNTER WAS MISSING
+        //accountNumber = ++nextAccountNumber; // ** needs ot be written cuz we dont have constructor chaining this ()
+        //accountBalance = 0;
+        //totalAccounts++; // ** THE COUNTER WAS MISSING
     }
 
     public BankAccount(String accountHolder, int accountBalance){
@@ -42,11 +43,12 @@ public class BankAccount {
     public void withdraw(double amount){ // subtracts from balance
         accountBalance -= amount; // Same as: accountBalance = accountBalance - amount
     }
-    // moves money from accounts // **** should be void, not return bankAccount
+    // moves money from accounts // **** should be void, not return bankAccount// transfer money out of current account
     public void transferMoney(BankAccount otherAccount, double amount) // this part needs revison
     {
-        this.accountBalance -=amount; //remove the money from the current account
+        this.accountBalance -=amount; //remove the money from THIS account )(the one calling the method)
         otherAccount.accountBalance += amount; // add the money from account1 to other account
+        // Same as: accountBalance = accountBalance - amount
     }
     // getters
     public double getBalance(){
@@ -72,9 +74,10 @@ public class BankAccount {
     // passing an object into a method (combining to objects inside of a method)
      public BankAccount combineAccounts(BankAccount otherAccount){
         BankAccount combined = new BankAccount(); // ** BETTER VARIABLE NAME (LIKE COMBINED/RESULT)
-        combined.accountHolder = this.accountHolder + "&" + otherAccount.accountHolder;
-        combined.accountBalance = this.accountBalance + otherAccount.accountBalance;
-         return combined;
+        combined.accountHolder = this.accountHolder + " & " + otherAccount.accountHolder; // account2's data (this.accountHolder). account3's data (otherAccount.accountHolder)
+        combined.accountBalance = this.accountBalance + otherAccount.accountBalance; //account2's data (this.accountBalane). Account3's data (otherAccount.accountBalance)
+         return combined; // ← This sends the new account BACK to whoever called the method
+         // The returned object gets stored in jointAccount
      }
 
      // Static methods // *** STATIC SHOULD BE STATIC
