@@ -22,7 +22,6 @@ public class BankAccount {
 
     public BankAccount(String accountHolder){
         this.accountHolder = accountHolder; // we used this to indicate that this is the object we are working with and we can use AccountHolder as a parameter
-        accountNumber = 0;
         accountBalance = 0;
         totalAccounts++; // ** THE COUNTER WAS MISSING
     }
