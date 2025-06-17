@@ -24,7 +24,7 @@ public class Rectangle {
 
     public Rectangle addObject(Rectangle room2){ //instead of int as a return type we use Rectangle
         Rectangle result= new Rectangle(); // to save the results of 2 objects in
-        result.length = this.length + room2.length;
+        result.length = this.length + room2.length; // r2 can also be named room2
         result.width = this.width + room2.width;
         return result;
     }
