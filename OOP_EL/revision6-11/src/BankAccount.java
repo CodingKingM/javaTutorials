@@ -23,6 +23,7 @@ public class BankAccount {
     public BankAccount(String accountHolder){
         this.accountHolder = accountHolder; // we used this to indicate that this is the object we are working with and we can use AccountHolder as a parameter
         accountBalance = 0;
+        accountNumber = ++nextAccountNumber; // ** needs ot be written cuz we dont have constructor chaining this ()
         totalAccounts++; // ** THE COUNTER WAS MISSING
     }
 
