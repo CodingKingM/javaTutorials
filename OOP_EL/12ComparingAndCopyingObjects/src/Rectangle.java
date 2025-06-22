@@ -63,9 +63,12 @@ public class Rectangle {
     public Rectangle(Rectangle sourceObject) {
         this.length = sourceObject.length;
         this.width = sourceObject.width;
-
     }
 
+    public void getInfo() {
+        System.out.println("length: " + length);
+        System.out.println("width: " + width);
+    }
 
 
 
