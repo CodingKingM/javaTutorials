@@ -1,9 +1,9 @@
 public class Person {
     //instance variables
-    private String name;
-    private int age;
-    private String address;
-    private String nationality;
+      String name;
+      int age;
+      String address;
+      String nationality;
 
     //Constructors
     public Person(){
@@ -41,6 +41,7 @@ public class Person {
     public String getNationality(){
         return nationality;
     }
+
 
 
 
