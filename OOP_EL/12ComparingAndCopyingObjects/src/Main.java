@@ -5,8 +5,16 @@ public class Main {
         Rectangle room2 = new Rectangle(30, 70);
         // to combine two objects r1 and r2
         // Rectangle r3 =  r1.addObject(r2); //
-        System.out.println(room1.addObject(room2).getLength());
-        System.out.println(room1.addObject(room2).getWidth());
+        //System.out.println(room1.addObject(room2).getLength());
+        //System.out.println(room1.addObject(room2).getWidth());
+
+        // room1.isEqual(room2); //doesnt work without the if
+
+        if (room1.equals(room2)) {
+            System.out.println("The objects are equal");
+        } else {
+            System.out.println("The objects are NOT equal");
+        }
 
     }
 }

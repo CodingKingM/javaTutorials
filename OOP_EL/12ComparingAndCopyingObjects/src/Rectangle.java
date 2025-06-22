@@ -50,6 +50,13 @@ public class Rectangle {
         return length * width;
     }
 
+    public boolean isEqual(Rectangle otherRectangle) {
+        if (this.length == otherRectangle.length && this.width == otherRectangle.width) {
+            return true;
+        } else
+            return false;
+    }
+
 
 
 
