@@ -50,6 +50,7 @@ public class Rectangle {
         return length * width;
     }
 
+    // to compare two objects
     public boolean isEqual(Rectangle otherRectangle) {
         if (this.length == otherRectangle.length && this.width == otherRectangle.width) {
             return true;
@@ -57,6 +58,13 @@ public class Rectangle {
             return false;
     }
 
+    // copy CONSTRUCTOR, to copy the contents of one object to another
+
+    public Rectangle(Rectangle sourceObject) {
+        this.length = sourceObject.length;
+        this.width = sourceObject.width;
+
+    }
 
 
 
