@@ -42,6 +42,13 @@ public class Person {
         return nationality;
     }
 
+    public void printPerson(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+        System.out.println("Nationality: " + nationality);
+    }
+
 
 
 

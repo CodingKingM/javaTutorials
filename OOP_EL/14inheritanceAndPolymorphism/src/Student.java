@@ -40,6 +40,14 @@ public class Student extends Person {
         return specialization;
     }
 
+    public void printPerson(){
+        super.printPerson(); // calls Person's printPerson METHOD...to inherit whats written in printPerson from Person class
+        System.out.println("Study level: " + studyLevel);
+        System.out.println("Specialization: " + specialization);
+        System.out.println("GPA: " + gpa);
+
+    }
+
 
 
 
