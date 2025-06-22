@@ -2,9 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         Rectangle room1 = new Rectangle(10,50);
-        Rectangle room2 = new Rectangle(room1);
-
-       room2.getInfo();
+        Rectangle room2 = new Rectangle(room1); //deep copying
+        room2.getInfo();
 //        r2 = r1; // reference copy// they both point at the same address
 
 

@@ -58,8 +58,7 @@ public class Rectangle {
             return false;
     }
 
-    // copy CONSTRUCTOR, to copy the contents of one object to another
-
+    // DEEP COPYING aka copy CONSTRUCTOR, to copy the contents of one object to another
     public Rectangle(Rectangle sourceObject) {
         this.length = sourceObject.length;
         this.width = sourceObject.width;
