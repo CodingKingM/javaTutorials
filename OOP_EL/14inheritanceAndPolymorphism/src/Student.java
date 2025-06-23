@@ -1,6 +1,6 @@
 public class Student extends Person {
 
-    // Study level, specialisation GPA
+    // Study level, specialisation, GPA
 
      int studyLevel;
      String specialization;

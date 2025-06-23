@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
 
         Vehicle veh1 = new Vehicle();
-        veh1.setBrand("Mercedes");
-        veh1.setYear(2020);
-        System.out.println(veh1.getBrand());
-        System.out.println(veh1.getYear());
-        System.out.println("--Display information--");
-        veh1.displayInfo();
+
+        Car car1 = new Car("Toyota", 2020, 4);
+        Bike bike1 = new Bike("Trek", 2021, true);
+
+        car1.displayInfo();   // Should show brand, year, AND doors
+        bike1.displayInfo();  // Should show brand, year, AND basket info
     }
 }
