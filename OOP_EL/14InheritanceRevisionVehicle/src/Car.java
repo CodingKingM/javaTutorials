@@ -17,5 +17,5 @@ public class Car extends Vehicle {
         super.displayInfo(); // calls displayInfo method from Vehicle and copies its content.
         System.out.println("Number of Doors: " + numDoors);
     }
-
 }
+

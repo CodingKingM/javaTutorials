@@ -1,5 +1,4 @@
 public class Bike extends Vehicle {
-
     boolean hasBasket;
 
     public Bike(){
