@@ -8,6 +8,7 @@ public class Student extends Person {
 
      //Constructors
     public Student(){
+        System.out.println("I am the Derived/sub class constructor ");
     }
 
     // instead of rewriting the code in the super class contructor we use the keyword SUPER

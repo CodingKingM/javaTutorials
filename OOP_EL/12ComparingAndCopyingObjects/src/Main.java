@@ -7,12 +7,11 @@ public class Main {
 //        r2 = r1; // reference copy// they both point at the same address
 
 
-
-//        if (room1.isEqual(room2)) {
-//            System.out.println("The objects are equal");
-//        } else {
-//          System.out.println("The objects are NOT equal");
-//        }
+        if (room1.isEqual(room2)) {
+            System.out.println("The objects are equal");
+        } else {
+          System.out.println("The objects are NOT equal");
+        }
 
     }
 }
