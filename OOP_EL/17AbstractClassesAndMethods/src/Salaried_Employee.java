@@ -4,7 +4,6 @@ public class Salaried_Employee extends Employee {
 
     //Constructor
     public Salaried_Employee(){
-        super();
         bonus = 0;
         deduction = 0;
     }

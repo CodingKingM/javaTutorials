@@ -7,9 +7,7 @@ public class Person {
 
     //Constructors
     public Person(){
-
         System.out.println("I am the superclass constructor ");
-
     }
     public Person(String name, int age, String address, String nationality) {
         this.name = name;

@@ -1,18 +1,18 @@
-public class Employee extends Person {
+public abstract class Employee {
 
+    String name;
+    int age;
     double salary;
     String rank;
     String job;
 
     //constructors
     public Employee() {
-        super();
-        salary = 0.0;
-        rank = "";
-        job = "";
     }
     public Employee(String name, int age, String address, String nationality, double salary, String rank, String job) {
-        super(name, age, address, nationality);
+
+        this.name = name;
+        this.age = age;
         this.salary = salary;
         this.rank = rank;
         this.job = job;
@@ -28,9 +28,8 @@ public class Employee extends Person {
         this.job = job;
     }
     // Getters
-    public double get_salary() {
-        return salary;
-    }
+    public abstract double get_salary(); // get_salary is abstracted means every sub class HAS to override it
+
     public String get_rank() {
         return rank;
     }
@@ -38,9 +37,10 @@ public class Employee extends Person {
         return job;
     }
 
-    @Override
+
     public void printPerson(){
-        super.printPerson(); // calls the printPerson method from Person.java and fills out the data
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
         System.out.println("Salary: " + get_salary());
         System.out.println("Rank: " + get_rank());
         System.out.println("Job: " + get_job());
