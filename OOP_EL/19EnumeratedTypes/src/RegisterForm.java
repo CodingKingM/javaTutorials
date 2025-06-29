@@ -10,7 +10,6 @@ public class RegisterForm {
     Semester StdSemester;
 
     // Constructor
-
     public RegisterForm(){
         StdName = "No name";
         StdGender = Gender.Male; // first we write the name of the enum then fullstop . and possible enums
