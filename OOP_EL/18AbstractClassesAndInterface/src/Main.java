@@ -11,7 +11,7 @@ public class Main {
         r1.getItemPrice();
         //r1.setTitle(); // wouldnt work cuz r1 is type RetailItem, so it only knows the methods in RetailItem
 
-        Displayable d1 = new CD();
+        Displayable d1 = new CD(); // d1 only knows the methods in Interface Displayable
         d1.display();
     }
 }
