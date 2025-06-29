@@ -23,9 +23,9 @@ public class CD implements RetailItem, Displayable {
     public double getItemPrice() {   // this is a must since its implemented from RetailItem
         return price;
     }
-//    public void setTitle(String title) {
-//        this.title = title;
-//    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
     public void display(){
         System.out.println("title: " + title);
         System.out.println("artist: " + artist);
