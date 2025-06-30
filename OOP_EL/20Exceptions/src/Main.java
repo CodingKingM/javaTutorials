@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -26,6 +27,9 @@ public class Main {
         }
         catch (ArithmeticException e) {
             System.out.print("Error, Division by zero!!");
+        }
+        catch (InputMismatchException e){
+            System.out.print("Error, Incorrect Input!!");
         }
 
     }
