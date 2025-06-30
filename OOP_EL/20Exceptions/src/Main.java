@@ -31,7 +31,7 @@ public class Main {
         catch (InputMismatchException e){
             System.out.print("Error, Incorrect Input!!");
         }
-        catch (Exception e) {
+        catch (Exception e) { // is an argument in the exception class. e can be named anything
             System.out.print("Error!" + e.getMessage());
         }
 
