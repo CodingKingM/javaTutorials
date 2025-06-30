@@ -1,16 +1,32 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        try
-        {
-            int x = 10, y = 0;
+//        try
+//        {
+//            int x = 10, y = 0;
+//            System.out.print(x/y);
+//        }
+//        catch (ArithmeticException e)
+//        {
+//            System.out.println("ERROR! Division by zero NOT allowed!");
+//        }
+//        System.out.println("Program continues");
+        try {
+            int x, y;
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter a value for x: ");
+            x = input.nextInt();
+
+            System.out.print("Enter a value for y: ");
+            y = input.nextInt();
+
             System.out.print(x/y);
         }
-        catch (ArithmeticException e)
-        {
-            System.out.println("ERROR! Division by zero NOT allowed!");
+        catch (ArithmeticException e) {
+            System.out.print("Error, Division by zero!!");
         }
-        System.out.println("Program continues");
 
     }
 }
