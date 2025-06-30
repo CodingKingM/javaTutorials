@@ -31,6 +31,9 @@ public class Main {
         catch (InputMismatchException e){
             System.out.print("Error, Incorrect Input!!");
         }
+        catch (Exception e) {
+            System.out.print("Error!" + e.getMessage());
+        }
 
     }
 }
