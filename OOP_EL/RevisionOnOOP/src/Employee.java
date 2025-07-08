@@ -1,31 +1,34 @@
 
-enum Gender{male,female};
+enum Gender{male,female}
 public abstract class Employee {
 
     //Attributes
      String name;
-     int SSN;
-     String Address;
+     int ssn;
+     String address;
      Gender sex;
 
      //Constructors
     public Employee(){
         name = "No name";
-        SSN = 0;
-        Address = "No address";
+        ssn = 0;
+        address = "No address";
         sex = Gender.male;
     }
     public Employee(String name) {
         this.name = name;
     }
-    public Employee(String name, int SSN){
-        this.name = name;
-        this.SSN = SSN;
+    public Employee(String name, int ssn){
+        this(name);
+        this.ssn = ssn;
     }
-    public Employee(String name, int SSN, String Address){
-        this.name = name;
-        this.SSN = SSN;
-        this.Address = Address;
+    public Employee(String name, int ssn, String address){
+        this(name, ssn);
+        this.address = address  ;
+    }
+    public Employee(String name, int ssn, String address, Gender sex){
+        this(name, ssn, address);
+        this.sex = sex;
     }
 
     // Setters and getters
@@ -36,16 +39,25 @@ public abstract class Employee {
     public String getName() { // String to mention the return type
         return name;
     }
-    public void setSSN(int SSN) {
-        this.SSN = SSN;
+    public void setSnn(int ssn) {
+        this.ssn = ssn;
     }
-    public int getSSN() {
-        return SSN;
+    public int getSnn() {
+        return ssn;
     }
     public void Gender(Gender sex) {
         this.sex = sex;
     }
+    public Gender getGender() {
+        return sex;
+    }
+
     //Abstract method
-    public abstract double Earning();
+    public abstract double earnings(); // we odnt @override because we are declaring a new method, we are not implementing or overriding
+
+    @Override // since we are inheriting a mehtod from java.lang.Object
+    public String toString() {
+        return "Employee: " + "name" + name + ", Snn: " + ssn + ", Address: " + address;
+    }
 
 }
