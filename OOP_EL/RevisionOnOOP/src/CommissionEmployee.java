@@ -36,7 +36,7 @@ public class CommissionEmployee extends Employee implements Displayable{
     // abstract method
     @Override
     public double earnings(){
-         return grossSales  + commissionRate;
+         return grossSales  * commissionRate;
     }
 
     // Interface methods
