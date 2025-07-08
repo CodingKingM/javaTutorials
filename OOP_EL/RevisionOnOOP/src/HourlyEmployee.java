@@ -27,6 +27,28 @@ public class HourlyEmployee extends Employee implements Displayable {
             return numberOfHours;
         }
 
+        @Override
+        public String toString() {
+            return "Hourly rate= " + hourlyRate + "Number of hours= " + numberOfHours;
+        }
+
+        // Abstract method
+        @Override
+        public double earnings(){
+            return hourlyRate * numberOfHours;
+        }
+
+        // Interface methods
+        public void displayAllDetails() {
+            System.out.println(super.toString());
+            System.out.println(toString());
+        }
+
+        public void displayEarnings() {
+            System.out.println(earnings());
+        }
+
+
 
 
 
