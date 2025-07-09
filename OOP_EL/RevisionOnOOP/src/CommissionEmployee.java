@@ -31,7 +31,7 @@ public class CommissionEmployee extends Employee implements Displayable{
 
     @Override
     public String toString(){
-         return "Gross Sales= " + grossSales + "Comisson rate= " + commissionRate;
+         return "Gross Sales= " + grossSales + "Commission rate= " + commissionRate;
     }
     // abstract method
     @Override
