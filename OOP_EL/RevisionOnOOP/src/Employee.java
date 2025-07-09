@@ -1,12 +1,10 @@
-
-enum Gender{male,female}
 public abstract class Employee {
 
     //Attributes
      String name;
      int ssn;
      String address;
-     Gender sex;
+      Gender sex;
 
      //Constructors
     public Employee(){
@@ -57,7 +55,7 @@ public abstract class Employee {
 
     @Override // since we are inheriting a mehtod from java.lang.Object
     public String toString() {
-        return "Employee: " + "name" + name + ", Snn: " + ssn + ", Address: " + address;
+        return "Employee: " + "name: " + name + ", Snn: " + ssn + ", Address: " + address;
     }
 
 }

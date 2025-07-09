@@ -21,7 +21,7 @@ public class SalariedEmployee extends Employee implements Displayable{
 //        this.deductions = deductions;
 //    }
 
-    public SalariedEmployee(String name, int ssn, String address, Gender sex, double salary, double bonus, double deductions){
+    public SalariedEmployee(double salary, double bonus, double deductions, String name, int ssn, String address, Gender sex){
         super(name, ssn, address, sex); // to call the constrctor from the base class
         this.salary = salary;
         this.bonus = bonus;
@@ -57,7 +57,7 @@ public class SalariedEmployee extends Employee implements Displayable{
 
     @Override
     public String toString(){
-        return "SalariedEmployee: " + salary + ", Bonus: " + bonus + ", Deductions: " + deductions;
+        return "Salaried Employee: " + salary + ", Bonus: " + bonus + ", Deductions: " + deductions;
     }
 
     // we need to mention the methods in the interfaces as well

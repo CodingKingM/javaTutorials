@@ -39,10 +39,10 @@ public class Department {
     }
     public void printBasicData() {
         for (int i = 0; i<empList.size();i++) {
-            System.out.println(empList.get(i).getSnn() + "" + empList.get(i).getName() + "");
+            System.out.println(empList.get(i).getSnn() + " " + empList.get(i).getName() + " ");
         }
     }
-    public void PrintAllDetails(){
+    public void printAllDetails(){
         for (int i = 0; i<empList.size();i++) {
             if (empList.get(i) instanceof SalariedEmployee) {
                 ((SalariedEmployee) empList.get(i)).displayAllDetails();

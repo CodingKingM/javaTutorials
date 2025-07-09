@@ -7,7 +7,7 @@ public class HourlyEmployee extends Employee implements Displayable {
         public HourlyEmployee(){
         }
 
-        public HourlyEmployee(String name, int ssn, String address, double hourlyRate, int numberOfHours) {
+        public HourlyEmployee(double hourlyRate, int numberOfHours, String name, int ssn, String address) {
             super(name, ssn, address);
             this.hourlyRate = hourlyRate;
             this.numberOfHours = numberOfHours;

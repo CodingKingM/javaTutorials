@@ -8,7 +8,7 @@ public class CommissionEmployee extends Employee implements Displayable{
     // Constrctor
      public CommissionEmployee (){}
 
-    public CommissionEmployee(String name, int ssn, String address, double grossSales, double commissionRate){
+    public CommissionEmployee(double grossSales, double commissionRate, String name, int ssn, String address){
          super(name, ssn, address);
          this.grossSales = grossSales;
          this.commissionRate = commissionRate;

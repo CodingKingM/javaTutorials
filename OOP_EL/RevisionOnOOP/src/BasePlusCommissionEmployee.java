@@ -6,9 +6,9 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
     public BasePlusCommissionEmployee(){
     }
 
-    public BasePlusCommissionEmployee(String name, int ssn, String address, double grossSales, double comissionRate, double base ){
-        //super(name, ssn, address); //doesnt work as its trying to call a constructor in Comission Employee but it doesnt exist
-        super(name, ssn, address, grossSales, comissionRate); // would work since CommissionEmployee is the super class of basePlusComission and has the constructor signature
+    public BasePlusCommissionEmployee(double grossSales, double commissionRate, double base, String name, int ssn, String address){
+        //super(name, ssn, address); //doesnt work as its trying to call a constructor in Commission Employee but it doesnt exist
+        super(grossSales, commissionRate, name, ssn, address); // would work since CommissionEmployee is the super class of basePlusCommission and has the constructor signature
         this.base = base;
     }
 
