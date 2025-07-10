@@ -37,10 +37,10 @@ public abstract class Employee {
     public String getName() { // String to mention the return type
         return name;
     }
-    public void setSnn(int ssn) {
+    public void setSsn(int ssn) {
         this.ssn = ssn;
     }
-    public int getSnn() {
+    public int getSsn() {
         return ssn;
     }
     public void Gender(Gender sex) {

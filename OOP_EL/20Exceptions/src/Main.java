@@ -26,7 +26,7 @@ public class Main {
             System.out.print(x/y);
         }
         catch (ArithmeticException e) {
-            System.out.print("Error, Division by zero!!");
+            System.out.print("Error, Division by zero!!" + e.getMessage());
         }
         catch (InputMismatchException e){
             System.out.print("Error, Incorrect Input!!");
@@ -35,5 +35,11 @@ public class Main {
             System.out.print("Error!" + e.getMessage());
         }
 
+//        public ArithmeticException extends Exception { // this is done automatically
+//            public ArithmeticException (String message){
+//                super(message);
+//            }
+        }
+
     }
-}
+
